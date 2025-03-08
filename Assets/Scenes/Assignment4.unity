@@ -133,8 +133,8 @@ GameObject:
   - component: {fileID: 56418984}
   - component: {fileID: 56418983}
   - component: {fileID: 56418982}
-  - component: {fileID: 56418986}
   - component: {fileID: 56418985}
+  - component: {fileID: 56418986}
   m_Layer: 0
   m_Name: dressBottom
   m_TagString: Untagged
@@ -284,8 +284,8 @@ GameObject:
   - component: {fileID: 115617026}
   - component: {fileID: 115617025}
   - component: {fileID: 115617024}
-  - component: {fileID: 115617028}
   - component: {fileID: 115617027}
+  - component: {fileID: 115617028}
   m_Layer: 0
   m_Name: bootShoes
   m_TagString: Untagged
@@ -713,8 +713,8 @@ GameObject:
   - component: {fileID: 527232465}
   - component: {fileID: 527232464}
   - component: {fileID: 527232463}
-  - component: {fileID: 527232467}
   - component: {fileID: 527232466}
+  - component: {fileID: 527232467}
   m_Layer: 0
   m_Name: loaferShoes
   m_TagString: Untagged
@@ -911,8 +911,8 @@ GameObject:
   - component: {fileID: 620280093}
   - component: {fileID: 620280092}
   - component: {fileID: 620280091}
-  - component: {fileID: 620280095}
   - component: {fileID: 620280094}
+  - component: {fileID: 620280095}
   m_Layer: 0
   m_Name: bucketHat
   m_TagString: Untagged
@@ -1156,8 +1156,8 @@ GameObject:
   - component: {fileID: 737113557}
   - component: {fileID: 737113556}
   - component: {fileID: 737113555}
-  - component: {fileID: 737113559}
   - component: {fileID: 737113558}
+  - component: {fileID: 737113559}
   m_Layer: 0
   m_Name: shortsBottom
   m_TagString: Untagged
@@ -1307,8 +1307,8 @@ GameObject:
   - component: {fileID: 755238298}
   - component: {fileID: 755238297}
   - component: {fileID: 755238296}
-  - component: {fileID: 755238300}
   - component: {fileID: 755238299}
+  - component: {fileID: 755238300}
   m_Layer: 0
   m_Name: basicTop
   m_TagString: Untagged
@@ -1458,8 +1458,8 @@ GameObject:
   - component: {fileID: 781427689}
   - component: {fileID: 781427688}
   - component: {fileID: 781427687}
-  - component: {fileID: 781427691}
   - component: {fileID: 781427690}
+  - component: {fileID: 781427691}
   m_Layer: 0
   m_Name: cargoBottom
   m_TagString: Untagged
@@ -1609,8 +1609,8 @@ GameObject:
   - component: {fileID: 906461464}
   - component: {fileID: 906461463}
   - component: {fileID: 906461462}
-  - component: {fileID: 906461466}
   - component: {fileID: 906461465}
+  - component: {fileID: 906461466}
   m_Layer: 0
   m_Name: tankTop
   m_TagString: Untagged
@@ -2031,8 +2031,8 @@ GameObject:
   - component: {fileID: 1191454579}
   - component: {fileID: 1191454578}
   - component: {fileID: 1191454577}
-  - component: {fileID: 1191454581}
   - component: {fileID: 1191454580}
+  - component: {fileID: 1191454581}
   m_Layer: 0
   m_Name: greenSneakerShoes
   m_TagString: Untagged
@@ -2182,8 +2182,8 @@ GameObject:
   - component: {fileID: 1329788771}
   - component: {fileID: 1329788770}
   - component: {fileID: 1329788769}
-  - component: {fileID: 1329788773}
   - component: {fileID: 1329788772}
+  - component: {fileID: 1329788773}
   m_Layer: 0
   m_Name: jeansBottom
   m_TagString: Untagged
@@ -2481,8 +2481,8 @@ GameObject:
   - component: {fileID: 1521276409}
   - component: {fileID: 1521276408}
   - component: {fileID: 1521276407}
-  - component: {fileID: 1521276411}
   - component: {fileID: 1521276410}
+  - component: {fileID: 1521276411}
   m_Layer: 0
   m_Name: starSneakerShoes
   m_TagString: Untagged
@@ -2632,8 +2632,8 @@ GameObject:
   - component: {fileID: 1552037317}
   - component: {fileID: 1552037316}
   - component: {fileID: 1552037315}
-  - component: {fileID: 1552037319}
   - component: {fileID: 1552037318}
+  - component: {fileID: 1552037319}
   m_Layer: 0
   m_Name: basicHat
   m_TagString: Untagged
@@ -2783,8 +2783,8 @@ GameObject:
   - component: {fileID: 1561884513}
   - component: {fileID: 1561884512}
   - component: {fileID: 1561884511}
-  - component: {fileID: 1561884515}
   - component: {fileID: 1561884514}
+  - component: {fileID: 1561884515}
   m_Layer: 0
   m_Name: maxiSkirtBottom
   m_TagString: Untagged
@@ -2934,8 +2934,8 @@ GameObject:
   - component: {fileID: 1676848747}
   - component: {fileID: 1676848746}
   - component: {fileID: 1676848745}
-  - component: {fileID: 1676848749}
   - component: {fileID: 1676848748}
+  - component: {fileID: 1676848749}
   m_Layer: 0
   m_Name: sweatsBottom
   m_TagString: Untagged
@@ -3237,8 +3237,8 @@ GameObject:
   - component: {fileID: 1721117692}
   - component: {fileID: 1721117691}
   - component: {fileID: 1721117690}
-  - component: {fileID: 1721117694}
   - component: {fileID: 1721117693}
+  - component: {fileID: 1721117694}
   m_Layer: 0
   m_Name: hoodieTop
   m_TagString: Untagged
@@ -3589,8 +3589,8 @@ GameObject:
   - component: {fileID: 1856465812}
   - component: {fileID: 1856465811}
   - component: {fileID: 1856465810}
-  - component: {fileID: 1856465814}
   - component: {fileID: 1856465813}
+  - component: {fileID: 1856465814}
   m_Layer: 0
   m_Name: vestTop
   m_TagString: Untagged
@@ -3740,8 +3740,8 @@ GameObject:
   - component: {fileID: 1884109713}
   - component: {fileID: 1884109712}
   - component: {fileID: 1884109711}
-  - component: {fileID: 1884109715}
   - component: {fileID: 1884109714}
+  - component: {fileID: 1884109715}
   m_Layer: 0
   m_Name: sandalShoes
   m_TagString: Untagged
@@ -4033,8 +4033,8 @@ GameObject:
   - component: {fileID: 2016025324}
   - component: {fileID: 2016025323}
   - component: {fileID: 2016025322}
-  - component: {fileID: 2016025326}
   - component: {fileID: 2016025325}
+  - component: {fileID: 2016025326}
   m_Layer: 0
   m_Name: flannelTop
   m_TagString: Untagged
