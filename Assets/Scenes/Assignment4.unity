@@ -133,33 +133,15 @@ GameObject:
   - component: {fileID: 56418984}
   - component: {fileID: 56418983}
   - component: {fileID: 56418982}
-  - component: {fileID: 56418981}
+  - component: {fileID: 56418986}
+  - component: {fileID: 56418985}
   m_Layer: 0
-  m_Name: bottom (5)
+  m_Name: dressBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &56418981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56418980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 56418983}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: dressBottom
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 56418983}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &56418982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +182,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 56418985}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -230,7 +224,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 56418981}
+  mPreview: {fileID: 56418986}
 --- !u!4 &56418984
 Transform:
   m_ObjectHideFlags: 0
@@ -246,6 +240,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &56418985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56418980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 2064148945936374207, guid: 0b93cc3ce6fb14f2f9b3a0237d0910df, type: 3}
+--- !u!114 &56418986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56418980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 56418983}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: dressBottom
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 56418983}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &115617022
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,33 +284,15 @@ GameObject:
   - component: {fileID: 115617026}
   - component: {fileID: 115617025}
   - component: {fileID: 115617024}
-  - component: {fileID: 115617023}
+  - component: {fileID: 115617028}
+  - component: {fileID: 115617027}
   m_Layer: 0
-  m_Name: shoes
+  m_Name: bootShoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &115617023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115617022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 115617025}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: bootShoes
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 115617025}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &115617024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +333,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 115617027}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -354,7 +375,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 115617023}
+  mPreview: {fileID: 115617028}
 --- !u!4 &115617026
 Transform:
   m_ObjectHideFlags: 0
@@ -370,6 +391,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &115617027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115617022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 2511829951248083215, guid: 4485791c47bcf4073a7c04941c28bc26, type: 3}
+--- !u!114 &115617028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115617022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 115617025}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: bootShoes
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 115617025}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &222114130
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,33 +713,15 @@ GameObject:
   - component: {fileID: 527232465}
   - component: {fileID: 527232464}
   - component: {fileID: 527232463}
-  - component: {fileID: 527232462}
+  - component: {fileID: 527232467}
+  - component: {fileID: 527232466}
   m_Layer: 0
-  m_Name: shoes (1)
+  m_Name: loaferShoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &527232462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527232461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 527232464}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: loaferShoes
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 527232464}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &527232463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,7 +762,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 527232466}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -756,7 +804,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 527232462}
+  mPreview: {fileID: 527232467}
 --- !u!4 &527232465
 Transform:
   m_ObjectHideFlags: 0
@@ -767,6 +815,86 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.261, y: 0, z: -0.228}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &527232466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527232461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 8486281941782170011, guid: 48bd7eaa17cae4314aa457fabb8f08e7, type: 3}
+--- !u!114 &527232467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527232461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 527232464}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: loaferShoes
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 527232464}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!1 &619196393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619196395}
+  - component: {fileID: 619196394}
+  m_Layer: 0
+  m_Name: OutfitManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &619196394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619196393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68c080fd5eb8a4582aa102e3d5ca5f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  model: {fileID: 1730293088}
+  overlayParent: {fileID: 1421629420}
+  maxLayers: 6
+--- !u!4 &619196395
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619196393}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.173, y: 0, z: 0.063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -783,33 +911,15 @@ GameObject:
   - component: {fileID: 620280093}
   - component: {fileID: 620280092}
   - component: {fileID: 620280091}
-  - component: {fileID: 620280090}
+  - component: {fileID: 620280095}
+  - component: {fileID: 620280094}
   m_Layer: 0
-  m_Name: hat
+  m_Name: bucketHat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &620280090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620280089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 620280092}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: bucketHat
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 620280092}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &620280091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -850,7 +960,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620280094}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -880,7 +1002,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 620280090}
+  mPreview: {fileID: 620280095}
 --- !u!4 &620280093
 Transform:
   m_ObjectHideFlags: 0
@@ -896,6 +1018,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &620280094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620280089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 6586093151150626087, guid: ce3e71cefbf8848bc8912a5c9e7aa94e, type: 3}
+--- !u!114 &620280095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620280089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 620280092}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: bucketHat
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 620280092}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,33 +1156,15 @@ GameObject:
   - component: {fileID: 737113557}
   - component: {fileID: 737113556}
   - component: {fileID: 737113555}
-  - component: {fileID: 737113554}
+  - component: {fileID: 737113559}
+  - component: {fileID: 737113558}
   m_Layer: 0
-  m_Name: bottom (1)
+  m_Name: shortsBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &737113554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737113553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 737113556}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: shortsBottom
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 737113556}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &737113555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,7 +1205,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 737113558}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -1098,7 +1247,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 737113554}
+  mPreview: {fileID: 737113559}
 --- !u!4 &737113557
 Transform:
   m_ObjectHideFlags: 0
@@ -1114,6 +1263,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &737113558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737113553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 3160784731185852101, guid: fb5f09ab56a1c4f3ca4454f5bc64d1a1, type: 3}
+--- !u!114 &737113559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737113553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 737113556}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: shortsBottom
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 737113556}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &755238294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,33 +1307,15 @@ GameObject:
   - component: {fileID: 755238298}
   - component: {fileID: 755238297}
   - component: {fileID: 755238296}
-  - component: {fileID: 755238295}
+  - component: {fileID: 755238300}
+  - component: {fileID: 755238299}
   m_Layer: 0
-  m_Name: top (1)
+  m_Name: basicTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &755238295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755238294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 755238297}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: basicTop
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 755238297}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &755238296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,7 +1356,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 755238299}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -1222,7 +1398,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 755238295}
+  mPreview: {fileID: 755238300}
 --- !u!4 &755238298
 Transform:
   m_ObjectHideFlags: 0
@@ -1238,6 +1414,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &755238299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755238294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 6585863799624829668, guid: 447c755cb938049b29813d3b46d47624, type: 3}
+--- !u!114 &755238300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755238294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 755238297}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: basicTop
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 755238297}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &781427685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1249,33 +1458,15 @@ GameObject:
   - component: {fileID: 781427689}
   - component: {fileID: 781427688}
   - component: {fileID: 781427687}
-  - component: {fileID: 781427686}
+  - component: {fileID: 781427691}
+  - component: {fileID: 781427690}
   m_Layer: 0
-  m_Name: bottom (3)
+  m_Name: cargoBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &781427686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781427685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 781427688}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: cargoBottom
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 781427688}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &781427687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1316,7 +1507,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 781427690}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -1346,7 +1549,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 781427686}
+  mPreview: {fileID: 781427691}
 --- !u!4 &781427689
 Transform:
   m_ObjectHideFlags: 0
@@ -1362,6 +1565,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &781427690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781427685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 1460799762930688758, guid: 723525b75d6504d7eac18e5f4264039a, type: 3}
+--- !u!114 &781427691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781427685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 781427688}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: cargoBottom
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 781427688}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &906461460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,33 +1609,15 @@ GameObject:
   - component: {fileID: 906461464}
   - component: {fileID: 906461463}
   - component: {fileID: 906461462}
-  - component: {fileID: 906461461}
+  - component: {fileID: 906461466}
+  - component: {fileID: 906461465}
   m_Layer: 0
-  m_Name: top (4)
+  m_Name: tankTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &906461461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 906461460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 906461463}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: tankTop
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 906461463}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &906461462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1440,7 +1658,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 906461465}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -1470,7 +1700,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 906461461}
+  mPreview: {fileID: 906461466}
 --- !u!4 &906461464
 Transform:
   m_ObjectHideFlags: 0
@@ -1486,6 +1716,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &906461465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906461460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 987480580475026272, guid: 3fa78a0368db946abbb26c95e7f5639f, type: 3}
+--- !u!114 &906461466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906461460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 906461463}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: tankTop
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 906461463}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &987452074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,33 +1760,15 @@ GameObject:
   - component: {fileID: 987452078}
   - component: {fileID: 987452077}
   - component: {fileID: 987452076}
-  - component: {fileID: 987452075}
+  - component: {fileID: 987452079}
+  - component: {fileID: 987452080}
   m_Layer: 0
-  m_Name: hat (2)
+  m_Name: bandanaHat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &987452075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987452074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 987452077}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: bandanaHat
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 987452077}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &987452076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1564,7 +1809,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 987452079}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -1594,7 +1851,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 987452075}
+  mPreview: {fileID: 987452080}
 --- !u!4 &987452078
 Transform:
   m_ObjectHideFlags: 0
@@ -1610,6 +1867,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &987452079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987452074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 240761787630806538, guid: dbc5e0b1f29e340bcbd5ae1496e9d905, type: 3}
+--- !u!114 &987452080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987452074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 987452077}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: bandanaHat
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 987452077}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1149129749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,33 +2031,15 @@ GameObject:
   - component: {fileID: 1191454579}
   - component: {fileID: 1191454578}
   - component: {fileID: 1191454577}
-  - component: {fileID: 1191454576}
+  - component: {fileID: 1191454581}
+  - component: {fileID: 1191454580}
   m_Layer: 0
-  m_Name: shoes (2)
+  m_Name: greenSneakerShoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1191454576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191454575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1191454578}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: greenSneakerShoes
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 1191454578}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1191454577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1808,7 +2080,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1191454580}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -1838,7 +2122,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1191454576}
+  mPreview: {fileID: 1191454581}
 --- !u!4 &1191454579
 Transform:
   m_ObjectHideFlags: 0
@@ -1854,6 +2138,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1191454580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191454575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 290226432056578105, guid: d08be1b0f22bf48989b2540991711d1e, type: 3}
+--- !u!114 &1191454581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191454575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1191454578}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: greenSneakerShoes
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 1191454578}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1329788767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,33 +2182,15 @@ GameObject:
   - component: {fileID: 1329788771}
   - component: {fileID: 1329788770}
   - component: {fileID: 1329788769}
-  - component: {fileID: 1329788768}
+  - component: {fileID: 1329788773}
+  - component: {fileID: 1329788772}
   m_Layer: 0
-  m_Name: bottom (2)
+  m_Name: jeansBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1329788768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329788767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1329788770}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: jeansBottom
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 1329788770}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1329788769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1932,7 +2231,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1329788772}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -1962,7 +2273,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1329788768}
+  mPreview: {fileID: 1329788773}
 --- !u!4 &1329788771
 Transform:
   m_ObjectHideFlags: 0
@@ -1978,6 +2289,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1329788772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329788767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 8891485664246554411, guid: 5e8738def8f9640c2abb4389d00e67e6, type: 3}
+--- !u!114 &1329788773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329788767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1329788770}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: jeansBottom
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 1329788770}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1404524823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2095,6 +2439,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1804950778}
+--- !u!1 &1421629419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1421629420}
+  m_Layer: 0
+  m_Name: outfit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1421629420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421629419}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.0017, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1730293092}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1521276405
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,33 +2481,15 @@ GameObject:
   - component: {fileID: 1521276409}
   - component: {fileID: 1521276408}
   - component: {fileID: 1521276407}
-  - component: {fileID: 1521276406}
+  - component: {fileID: 1521276411}
+  - component: {fileID: 1521276410}
   m_Layer: 0
-  m_Name: shoes (3)
+  m_Name: starSneakerShoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1521276406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521276405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1521276408}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: starSneakerShoes
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 1521276408}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1521276407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2173,7 +2530,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1521276410}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -2203,7 +2572,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1521276406}
+  mPreview: {fileID: 1521276411}
 --- !u!4 &1521276409
 Transform:
   m_ObjectHideFlags: 0
@@ -2219,6 +2588,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1521276410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521276405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 3685028500713873632, guid: b25c2e698ba184d0cab4d5dc8fc28173, type: 3}
+--- !u!114 &1521276411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521276405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1521276408}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: starSneakerShoes
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 1521276408}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1552037313
 GameObject:
   m_ObjectHideFlags: 0
@@ -2230,33 +2632,15 @@ GameObject:
   - component: {fileID: 1552037317}
   - component: {fileID: 1552037316}
   - component: {fileID: 1552037315}
-  - component: {fileID: 1552037314}
+  - component: {fileID: 1552037319}
+  - component: {fileID: 1552037318}
   m_Layer: 0
-  m_Name: hat (1)
+  m_Name: basicHat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1552037314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1552037313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1552037316}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: basicHat
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 1552037316}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1552037315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2297,7 +2681,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1552037318}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -2327,7 +2723,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1552037314}
+  mPreview: {fileID: 1552037319}
 --- !u!4 &1552037317
 Transform:
   m_ObjectHideFlags: 0
@@ -2343,6 +2739,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1552037318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552037313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 6316096208709745098, guid: 882f3ae70dbc342c4b4233c4ec7ce04e, type: 3}
+--- !u!114 &1552037319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552037313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1552037316}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: basicHat
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 1552037316}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1561884509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2354,33 +2783,15 @@ GameObject:
   - component: {fileID: 1561884513}
   - component: {fileID: 1561884512}
   - component: {fileID: 1561884511}
-  - component: {fileID: 1561884510}
+  - component: {fileID: 1561884515}
+  - component: {fileID: 1561884514}
   m_Layer: 0
-  m_Name: bottom
+  m_Name: maxiSkirtBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1561884510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561884509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1561884512}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: maxiSkirtBottom
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 1561884512}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1561884511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2421,7 +2832,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1561884514}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -2451,7 +2874,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1561884510}
+  mPreview: {fileID: 1561884515}
 --- !u!4 &1561884513
 Transform:
   m_ObjectHideFlags: 0
@@ -2467,6 +2890,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1561884514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561884509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 5787072116425950010, guid: 8815798fc922f4c9aa50e38f43d7c8ca, type: 3}
+--- !u!114 &1561884515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561884509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1561884512}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: maxiSkirtBottom
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 1561884512}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1676848743
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,33 +2934,15 @@ GameObject:
   - component: {fileID: 1676848747}
   - component: {fileID: 1676848746}
   - component: {fileID: 1676848745}
-  - component: {fileID: 1676848744}
+  - component: {fileID: 1676848749}
+  - component: {fileID: 1676848748}
   m_Layer: 0
-  m_Name: bottom (4)
+  m_Name: sweatsBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1676848744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676848743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1676848746}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: sweatsBottom
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 1676848746}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1676848745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2545,7 +2983,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1676848748}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -2575,7 +3025,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1676848744}
+  mPreview: {fileID: 1676848749}
 --- !u!4 &1676848747
 Transform:
   m_ObjectHideFlags: 0
@@ -2591,6 +3041,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1676848748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676848743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 1551575170978244779, guid: 1dfde823619624c9f9fbaf5ad7ed2cad, type: 3}
+--- !u!114 &1676848749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676848743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1676848746}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: sweatsBottom
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 1676848746}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1694017355
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,33 +3085,15 @@ GameObject:
   - component: {fileID: 1694017359}
   - component: {fileID: 1694017358}
   - component: {fileID: 1694017357}
-  - component: {fileID: 1694017356}
+  - component: {fileID: 1694017360}
+  - component: {fileID: 1694017361}
   m_Layer: 0
-  m_Name: top
+  m_Name: collaredTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1694017356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694017355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1694017358}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: stripedCollaredTop
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 1694017358}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1694017357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2669,7 +3134,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1694017360}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -2699,7 +3176,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1694017356}
+  mPreview: {fileID: 1694017361}
 --- !u!4 &1694017359
 Transform:
   m_ObjectHideFlags: 0
@@ -2715,6 +3192,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1694017360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694017355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 6710839872222154280, guid: 31db9653081df4b91ae357a4991c040e, type: 3}
+  - {fileID: 5566452197284537794, guid: 59d9b93a3e5b045c7bb0117e64799268, type: 3}
+--- !u!114 &1694017361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694017355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1694017358}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: stripedCollaredTop
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 1694017358}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1721117688
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,33 +3237,15 @@ GameObject:
   - component: {fileID: 1721117692}
   - component: {fileID: 1721117691}
   - component: {fileID: 1721117690}
-  - component: {fileID: 1721117689}
+  - component: {fileID: 1721117694}
+  - component: {fileID: 1721117693}
   m_Layer: 0
-  m_Name: top (3)
+  m_Name: hoodieTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1721117689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721117688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1721117691}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: hoodieTop
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 1721117691}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1721117690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2793,7 +3286,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1721117693}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -2823,7 +3328,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1721117689}
+  mPreview: {fileID: 1721117694}
 --- !u!4 &1721117692
 Transform:
   m_ObjectHideFlags: 0
@@ -2839,6 +3344,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1721117693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721117688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 277658376395600175, guid: 6d33de3ed58b94f65903d58460a1c449, type: 3}
+  - {fileID: 199301652847902147, guid: 6105f54d377494692bd65d7de8bd849a, type: 3}
+--- !u!114 &1721117694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721117688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1721117691}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: hoodieTop
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 1721117691}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1730293088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2850,7 +3389,7 @@ GameObject:
   - component: {fileID: 1730293092}
   - component: {fileID: 1730293091}
   - component: {fileID: 1730293090}
-  - component: {fileID: 1730293089}
+  - component: {fileID: 1730293093}
   m_Layer: 0
   m_Name: model
   m_TagString: Untagged
@@ -2858,25 +3397,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1730293089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730293088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1730293091}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: model
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 1730293091}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1730293090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2947,7 +3467,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1730293089}
+  mPreview: {fileID: 1730293093}
 --- !u!4 &1730293092
 Transform:
   m_ObjectHideFlags: 0
@@ -2957,12 +3477,32 @@ Transform:
   m_GameObject: {fileID: 1730293088}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.0017, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1421629420}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1730293093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730293088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1730293091}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: model
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 1730293091}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1804950778
 GameObject:
   m_ObjectHideFlags: 0
@@ -3049,33 +3589,15 @@ GameObject:
   - component: {fileID: 1856465812}
   - component: {fileID: 1856465811}
   - component: {fileID: 1856465810}
-  - component: {fileID: 1856465809}
+  - component: {fileID: 1856465814}
+  - component: {fileID: 1856465813}
   m_Layer: 0
-  m_Name: top (5)
+  m_Name: vestTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1856465809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856465808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1856465811}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: vestTop
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 1856465811}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1856465810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3116,7 +3638,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1856465813}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -3146,7 +3680,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1856465809}
+  mPreview: {fileID: 1856465814}
 --- !u!4 &1856465812
 Transform:
   m_ObjectHideFlags: 0
@@ -3162,6 +3696,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1856465813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856465808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 2930950001831739027, guid: c8974b98ac2d64e9995e658d6639527a, type: 3}
+--- !u!114 &1856465814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856465808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1856465811}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: vestTop
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 1856465811}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1884109709
 GameObject:
   m_ObjectHideFlags: 0
@@ -3173,33 +3740,15 @@ GameObject:
   - component: {fileID: 1884109713}
   - component: {fileID: 1884109712}
   - component: {fileID: 1884109711}
-  - component: {fileID: 1884109710}
+  - component: {fileID: 1884109715}
+  - component: {fileID: 1884109714}
   m_Layer: 0
-  m_Name: shoes (4)
+  m_Name: sandalShoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1884109710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1884109709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1884109712}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: sandalShoes
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 1884109712}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1884109711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3240,7 +3789,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1884109714}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -3270,7 +3831,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1884109710}
+  mPreview: {fileID: 1884109715}
 --- !u!4 &1884109713
 Transform:
   m_ObjectHideFlags: 0
@@ -3286,6 +3847,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1884109714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884109709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 3697308667857024965, guid: b7aad395fefae4926b9088b2ab95bd2b, type: 3}
+--- !u!114 &1884109715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884109709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1884109712}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: sandalShoes
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 1884109712}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1934457558
 GameObject:
   m_ObjectHideFlags: 0
@@ -3439,33 +4033,15 @@ GameObject:
   - component: {fileID: 2016025324}
   - component: {fileID: 2016025323}
   - component: {fileID: 2016025322}
-  - component: {fileID: 2016025321}
+  - component: {fileID: 2016025326}
+  - component: {fileID: 2016025325}
   m_Layer: 0
-  m_Name: top (2)
+  m_Name: flannelTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2016025321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2016025320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 2016025323}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: flannelTop
-  mDatasetName: Vuforia/Assignment4.xml
-  mCastedBehaviour: {fileID: 2016025323}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2016025322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3506,7 +4082,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   OnTargetFound:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2016025325}
+        m_TargetAssemblyTypeName: ClothingTracker, Assembly-CSharp
+        m_MethodName: OnTargetFound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
@@ -3536,7 +4124,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2016025321}
+  mPreview: {fileID: 2016025326}
 --- !u!4 &2016025324
 Transform:
   m_ObjectHideFlags: 0
@@ -3552,6 +4140,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2016025325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016025320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ae334fc3f50473782d7f748bc6f4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothingPrefabs:
+  - {fileID: 7164375637026662200, guid: 42bdbd7eaccc441039aa0a5833150393, type: 3}
+  - {fileID: 1412613407360519894, guid: d22169b214aa44179b2fd2f2b35e39a6, type: 3}
+--- !u!114 &2016025326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016025320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 2016025323}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: flannelTop
+  mDatasetName: Vuforia/Assignment4.xml
+  mCastedBehaviour: {fileID: 2016025323}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &2111121008
 GameObject:
   m_ObjectHideFlags: 0
@@ -3956,3 +4578,4 @@ SceneRoots:
   - {fileID: 1191454579}
   - {fileID: 1521276409}
   - {fileID: 1884109713}
+  - {fileID: 619196395}
