@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
-    <ImageTarget name="model" size="0.177800 0.497840" />
-    <ImageTarget name="sandalShoes" size="0.050800 0.033867" />
-    <ImageTarget name="starShoes" size="0.050800 0.033867" />
-    <ImageTarget name="greenShoes" size="0.050800 0.033867" />
-    <ImageTarget name="loaferShoes" size="0.050800 0.033867" />
-    <ImageTarget name="bootShoes" size="0.050800 0.033867" />
-    <ImageTarget name="bandanaHat" size="0.050800 0.033867" />
-    <ImageTarget name="basicHat" size="0.050800 0.033867" />
-    <ImageTarget name="bucketHat" size="0.050800 0.033867" />
-    <ImageTarget name="dressBottom" size="0.101600 0.135467" />
-    <ImageTarget name="sweatsBottom" size="0.101600 0.135467" />
-    <ImageTarget name="cargoBottom" size="0.101600 0.135467" />
-    <ImageTarget name="jeanBottom" size="0.101600 0.135467" />
-    <ImageTarget name="shortsBottom" size="0.101600 0.135467" />
-    <ImageTarget name="maxiSkirtBottom" size="0.101600 0.135467" />
+    <ImageTarget name="model" size="0.063500 0.177800" />
+    <ImageTarget name="sandalShoes" size="0.076200 0.050800" />
+    <ImageTarget name="starSneakerShoes" size="0.076200 0.050800" />
+    <ImageTarget name="greenSneakerShoes" size="0.076200 0.050800" />
+    <ImageTarget name="loaferShoes" size="0.076200 0.050800" />
+    <ImageTarget name="bootShoes" size="0.076200 0.050800" />
+    <ImageTarget name="bandanaHat" size="0.076200 0.050800" />
+    <ImageTarget name="basicHat" size="0.076200 0.050800" />
+    <ImageTarget name="bucketHat" size="0.076200 0.050800" />
+    <ImageTarget name="dressBottom" size="0.076200 0.101600" />
+    <ImageTarget name="sweatsBottom" size="0.076200 0.101600" />
+    <ImageTarget name="cargoBottom" size="0.076200 0.101600" />
+    <ImageTarget name="jeansBottom" size="0.076200 0.101600" />
+    <ImageTarget name="shortsBottom" size="0.076200 0.101600" />
+    <ImageTarget name="maxiSkirtBottom" size="0.076200 0.101600" />
     <ImageTarget name="vestTop" size="0.076200 0.076200" />
     <ImageTarget name="tankTop" size="0.076200 0.076200" />
     <ImageTarget name="hoodieTop" size="0.076200 0.076200" />
