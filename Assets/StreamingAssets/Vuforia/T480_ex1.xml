@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
-  <Tracking>
-    <ImageTarget name="globe" size="0.076200 0.062331" />
-    <ImageTarget name="building" size="0.076200 0.069021" />
-  </Tracking>
+    <Tracking>
+        <ImageTarget name="Ribbon_Box.Top" size="0.180000 0.065000"/>
+        <ImageTarget name="Ribbon_Box.Bottom" size="0.180000 0.065000"/>
+        <MultiTarget name="Ribbon_Box">
+            <Part name="Ribbon_Box.Top" translation="0 0.007499999832361937 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="Ribbon_Box.Bottom" translation="0 -0.007499999832361937 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
 </QCARConfig>
