@@ -7,19 +7,23 @@ using System.Collections.Specialized;
 
 //using System.Diagnostics;
 using UnityEngine;
+using TMPro;
 
 public class Journal : MonoBehaviour
 {
     public GameObject[] clothes = new GameObject[5];
     int currentClothesIndex = 0;
-    [SerializeField] GameObject obj;
+    [SerializeField] Transform obj;
     [SerializeField] GameObject multiParent;
+    [SerializeField] TextMeshProUGUI text;
 
     public void AddSet()
     {
-        GameObject set = Instantiate(obj);
+        GameObject set = Instantiate(obj.gameObject);
         set.SetActive(false);
         clothes[currentClothesIndex] = set;
+
+        DeleteChildren();
 
         //clothes[currentClothesIndex].SetActive();
         clothes[currentClothesIndex].transform.SetParent(multiParent.transform);
@@ -27,34 +31,44 @@ public class Journal : MonoBehaviour
         //Debug.LogWarning(set.transform.position);
         clothes[currentClothesIndex].transform.localRotation = Quaternion.Euler(0, 0, 0);
         currentClothesIndex = (currentClothesIndex + 1) % clothes.Length;
+
+        
     }
 
-    void AddToMulti()
+    void DeleteChildren()
     {
-        
+        foreach (Transform child in obj)
+        {
+            if (child != null)
+            {
+                Destroy(child.gameObject);
+            }
+        }
     }
 
 
     public void GoLeft()
     {
-        Debug.LogWarning(currentClothesIndex - 1);
-        if (clothes[currentClothesIndex - 1] != null)
-        {
+        if (clothes[currentClothesIndex] != null)
             clothes[currentClothesIndex].SetActive(false);
-            clothes[currentClothesIndex - 1].SetActive(true);
-            currentClothesIndex--;
-        }
+
+        currentClothesIndex = (currentClothesIndex - 1 + clothes.Length) % clothes.Length;
+        text.text = $"[Slot: {currentClothesIndex}]";
+
+        if (clothes[currentClothesIndex] != null)
+            clothes[currentClothesIndex].SetActive(true);
     }
 
     public void GoRight()
     {
-        Debug.LogWarning(currentClothesIndex - 1);
-        if (clothes[currentClothesIndex + 1] != null)
-        {
+        if (clothes[currentClothesIndex] != null)
             clothes[currentClothesIndex].SetActive(false);
-            clothes[currentClothesIndex + 1].SetActive(true);
-            currentClothesIndex++;
-        }
+
+        currentClothesIndex = (currentClothesIndex + 1) % clothes.Length;
+        text.text = $"[Slot: {currentClothesIndex}]";
+
+        if (clothes[currentClothesIndex] != null)
+            clothes[currentClothesIndex ].SetActive(true);
     }
 
 
