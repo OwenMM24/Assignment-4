@@ -18,7 +18,6 @@ public class Journal : MonoBehaviour
     [SerializeField] GameObject multiParent;
     [SerializeField] TextMeshProUGUI slotText;
     [SerializeField] TextMeshProUGUI usesText;
-    int outfitUses = 0;
 
     public void AddSet()
     {
@@ -60,7 +59,7 @@ public class Journal : MonoBehaviour
             clothes[currentClothesIndex].SetActive(false);
 
         currentClothesIndex = (currentClothesIndex - 1 + clothes.Length) % clothes.Length;
-        slotText.text = $"[Slot: {currentClothesIndex}]";
+        slotText.text = $"[Slot {currentClothesIndex + 1}]";
         usesText.text = $"Outfit Worn {clothesUses[currentClothesIndex]} Times";
 
         if (clothes[currentClothesIndex] != null)
@@ -73,7 +72,7 @@ public class Journal : MonoBehaviour
             clothes[currentClothesIndex].SetActive(false);
 
         currentClothesIndex = (currentClothesIndex + 1) % clothes.Length;
-        slotText.text = $"[Slot: {currentClothesIndex}]";
+        slotText.text = $"[Slot {currentClothesIndex + 1}]";
         usesText.text = $"Outfit Worn {clothesUses[currentClothesIndex]} Times";
 
         if (clothes[currentClothesIndex] != null)

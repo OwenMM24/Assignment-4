@@ -1,26 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
-  <Tracking>
-    <ImageTarget name="model" size="0.063500 0.177800" />
-    <ImageTarget name="sandalShoes" size="0.076200 0.050800" />
-    <ImageTarget name="starSneakerShoes" size="0.076200 0.050800" />
-    <ImageTarget name="greenSneakerShoes" size="0.076200 0.050800" />
-    <ImageTarget name="loaferShoes" size="0.076200 0.050800" />
-    <ImageTarget name="bootShoes" size="0.076200 0.050800" />
-    <ImageTarget name="bandanaHat" size="0.076200 0.050800" />
-    <ImageTarget name="basicHat" size="0.076200 0.050800" />
-    <ImageTarget name="bucketHat" size="0.076200 0.050800" />
-    <ImageTarget name="dressBottom" size="0.076200 0.101600" />
-    <ImageTarget name="sweatsBottom" size="0.076200 0.101600" />
-    <ImageTarget name="cargoBottom" size="0.076200 0.101600" />
-    <ImageTarget name="jeansBottom" size="0.076200 0.101600" />
-    <ImageTarget name="shortsBottom" size="0.076200 0.101600" />
-    <ImageTarget name="maxiSkirtBottom" size="0.076200 0.101600" />
-    <ImageTarget name="vestTop" size="0.076200 0.076200" />
-    <ImageTarget name="tankTop" size="0.076200 0.076200" />
-    <ImageTarget name="hoodieTop" size="0.076200 0.076200" />
-    <ImageTarget name="flannelTop" size="0.076200 0.076200" />
-    <ImageTarget name="basicTop" size="0.076200 0.076200" />
-    <ImageTarget name="stripedCollaredTop" size="0.076200 0.076200" />
-  </Tracking>
+    <Tracking>
+        <ImageTarget name="model" size="0.063500 0.177800"/>
+        <ImageTarget name="sandalShoes" size="0.076200 0.050800"/>
+        <ImageTarget name="starSneakerShoes" size="0.076200 0.050800"/>
+        <ImageTarget name="greenSneakerShoes" size="0.076200 0.050800"/>
+        <ImageTarget name="loaferShoes" size="0.076200 0.050800"/>
+        <ImageTarget name="bootShoes" size="0.076200 0.050800"/>
+        <ImageTarget name="bandanaHat" size="0.076200 0.050800"/>
+        <ImageTarget name="basicHat" size="0.076200 0.050800"/>
+        <ImageTarget name="bucketHat" size="0.076200 0.050800"/>
+        <ImageTarget name="dressBottom" size="0.076200 0.101600"/>
+        <ImageTarget name="sweatsBottom" size="0.076200 0.101600"/>
+        <ImageTarget name="cargoBottom" size="0.076200 0.101600"/>
+        <ImageTarget name="jeansBottom" size="0.076200 0.101600"/>
+        <ImageTarget name="shortsBottom" size="0.076200 0.101600"/>
+        <ImageTarget name="maxiSkirtBottom" size="0.076200 0.101600"/>
+        <ImageTarget name="vestTop" size="0.076200 0.076200"/>
+        <ImageTarget name="tankTop" size="0.076200 0.076200"/>
+        <ImageTarget name="hoodieTop" size="0.076200 0.076200"/>
+        <ImageTarget name="flannelTop" size="0.076200 0.076200"/>
+        <ImageTarget name="basicTop" size="0.076200 0.076200"/>
+        <ImageTarget name="stripedCollaredTop" size="0.076200 0.076200"/>
+        <ImageTarget name="catalogue.Left" size="0.010590 0.169440"/>
+        <ImageTarget name="catalogue.Right" size="0.010590 0.169440"/>
+        <ImageTarget name="catalogue.Top" size="0.135000 0.010587"/>
+        <ImageTarget name="catalogue.Front" size="0.135000 0.170025"/>
+        <ImageTarget name="catalogue.Back" size="0.135000 0.170025"/>
+        <ImageTarget name="catalogue.Bottom" size="0.135000 0.010587"/>
+        <MultiTarget name="catalogue">
+            <Part name="catalogue.Left" translation="-0.06750000268220901 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="catalogue.Right" translation="0.06750000268220901 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="catalogue.Front" translation="0 0 0.005295000039041042" rotation="AD: 1 0 0 0"/>
+            <Part name="catalogue.Back" translation="0 0 -0.005295000039041042" rotation="AD: 0 1 0 180"/>
+            <Part name="catalogue.Top" translation="0 0.08500000089406967 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="catalogue.Bottom" translation="0 -0.08500000089406967 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
 </QCARConfig>
